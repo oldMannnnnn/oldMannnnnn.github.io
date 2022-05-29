@@ -6,15 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Archives: 2022/5 | 王智坚的秘密空间</title>
+  <title>数组排序 | 王智坚的秘密空间</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="王智坚的秘密空间">
-<meta property="og:url" content="http://example.com/archives/2022/05/index.html">
+  <meta name="description" content="数组排序一维数组排序对于排序，Java内置了工具类&#x3D;&#x3D;Arrays.sort&#x3D;&#x3D;,其内部原理使用的是快速排序算法，排序之后的结果为升序。  例如 对于int类型数组 1int[] arr &#x3D; &amp;#123;9,7,8,2,4,3,6,1,5&amp;#125;;  可以使用Arrays.sort进行排序 1Arrays.sort(arr);  无需返回值，因为对arr">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数组排序">
+<meta property="og:url" content="http://example.com/2022/05/29/%E6%95%B0%E7%BB%84%E6%8E%92%E5%BA%8F/index.html">
 <meta property="og:site_name" content="王智坚的秘密空间">
+<meta property="og:description" content="数组排序一维数组排序对于排序，Java内置了工具类&#x3D;&#x3D;Arrays.sort&#x3D;&#x3D;,其内部原理使用的是快速排序算法，排序之后的结果为升序。  例如 对于int类型数组 1int[] arr &#x3D; &amp;#123;9,7,8,2,4,3,6,1,5&amp;#125;;  可以使用Arrays.sort进行排序 1Arrays.sort(arr);  无需返回值，因为对arr">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2022/%E7%AC%94%E8%AE%B0/hexo/source/_posts/%E6%95%B0%E7%BB%84%E6%8E%92%E5%BA%8F/1653812670549.png">
+<meta property="og:image" content="http://example.com/2022/05/29/%E6%95%B0%E7%BB%84%E6%8E%92%E5%BA%8F/1653814055658.png">
+<meta property="og:image" content="http://example.com/2022/05/29/%E6%95%B0%E7%BB%84%E6%8E%92%E5%BA%8F/1653816639187.png">
+<meta property="article:published_time" content="2022-05-29T07:05:15.000Z">
+<meta property="article:modified_time" content="2022-05-29T09:30:53.671Z">
 <meta property="article:author" content="王智坚">
+<meta property="article:tag" content="leetcode">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2022/%E7%AC%94%E8%AE%B0/hexo/source/_posts/%E6%95%B0%E7%BB%84%E6%8E%92%E5%BA%8F/1653812670549.png">
   
     <link rel="alternative" href="/atom.xml" title="王智坚的秘密空间" type="application/atom+xml">
   
@@ -138,36 +147,89 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-数组排序" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2022" class="archive-year">2022</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/05/29/%E6%95%B0%E7%BB%84%E6%8E%92%E5%BA%8F/" class="archive-article-date">
-  	<time datetime="2022-05-29T07:05:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-05-29</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/05/29/%E6%95%B0%E7%BB%84%E6%8E%92%E5%BA%8F/">数组排序</a>
+    <h1 class="article-title" itemprop="name">
+      数组排序
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2022/05/29/%E6%95%B0%E7%BB%84%E6%8E%92%E5%BA%8F/" class="archive-article-date">
+  	<time datetime="2022-05-29T07:05:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-05-29</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="数组排序"><a href="#数组排序" class="headerlink" title="数组排序"></a>数组排序</h3><h4 id="一维数组排序"><a href="#一维数组排序" class="headerlink" title="一维数组排序"></a>一维数组排序</h4><p>对于排序，Java内置了工具类&#x3D;&#x3D;Arrays.sort&#x3D;&#x3D;,其内部原理使用的是快速排序算法，排序之后的结果为升序。</p>
+<ul>
+<li><p>例如</p>
+<p>对于int类型数组</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span>[] arr = &#123;<span class="number">9</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">2</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">6</span>,<span class="number">1</span>,<span class="number">5</span>&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>可以使用Arrays.sort进行排序</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Arrays.sort(arr);</span><br></pre></td></tr></table></figure>
+
+<p>无需返回值，因为对arr本身进行操作。操作之后返回的结果为</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">arr=[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>];</span><br></pre></td></tr></table></figure>
+
+<p>同理，对于String类型数组也是同样的。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">String[] strs = &#123;<span class="string">&quot;b&quot;</span>,<span class="string">&quot;d&quot;</span>,<span class="string">&quot;c&quot;</span>,<span class="string">&quot;a&quot;</span>&#125;;</span><br><span class="line">Arrays.sort(strs);</span><br></pre></td></tr></table></figure>
+
+<p>排序之后的结果按照字典序升序进行排列</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">strs = [<span class="string">&quot;a&quot;</span>,<span class="string">&quot;b&quot;</span>,<span class="string">&quot;c&quot;</span>,<span class="string">&quot;d&quot;</span>];</span><br></pre></td></tr></table></figure></li>
+</ul>
+<p>那么问题来了，如果我想要的效果是大的排在前面——降序呢？该如何操作呢？</p>
+<p>这就涉及到了内部类与重写的操作了。</p>
+<h4 id="自定义排序"><a href="#自定义排序" class="headerlink" title="自定义排序"></a>自定义排序</h4><p>通过观察java的api文档，对Arrays中的sort方法中，有一个参数&#x3D;&#x3D;Comparator&#x3D;&#x3D;</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`**sort**(T[] a,  Comparator&lt;? <span class="built_in">super</span> T&gt; c)`</span><br></pre></td></tr></table></figure>
+
+<p>可以通过内部类，自定义比较规则。</p>
+<ul>
+<li><p>例如，对String类型的一维数组降序</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">String[] strs = &#123;<span class="string">&quot;b&quot;</span>,<span class="string">&quot;d&quot;</span>,<span class="string">&quot;c&quot;</span>,<span class="string">&quot;a&quot;</span>&#125;;</span><br><span class="line">  Arrays.sort(strs, <span class="keyword">new</span> <span class="title class_">Comparator</span>&lt;String&gt;()&#123;</span><br><span class="line">      <span class="meta">@Override</span></span><br><span class="line">      <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">compare</span><span class="params">(String o1, String o2)</span>&#123;</span><br><span class="line">          <span class="comment">//字符串的比较使用String中的compareTo方法</span></span><br><span class="line">          <span class="comment">//compareTo比较之后，结果返回1，表示大于，返回-1，表示小于。</span></span><br><span class="line">          <span class="keyword">return</span> o2.compareTo(o1);</span><br><span class="line">      &#125;</span><br><span class="line">  &#125;);</span><br></pre></td></tr></table></figure>
+
+<p>那么，对于int类型数组是不是一样的操作呢？</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span>[] arr = &#123;<span class="number">9</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">2</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">6</span>,<span class="number">1</span>,<span class="number">5</span>&#125;;</span><br><span class="line">  Arrays.sort(arr, <span class="keyword">new</span> <span class="title class_">Comparator</span>&lt;<span class="type">int</span>&gt;()&#123;</span><br><span class="line">      <span class="meta">@Override</span></span><br><span class="line">      <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">compare</span><span class="params">(<span class="type">int</span> o1, <span class="type">int</span> o2)</span>&#123;</span><br><span class="line">          <span class="keyword">return</span> o2-o1;</span><br><span class="line">      &#125;</span><br><span class="line">  &#125;);</span><br></pre></td></tr></table></figure>
+
+<p>然而却得到一个&#x3D;&#x3D;编译时异常&#x3D;&#x3D;</p>
+<p><img src="/2022/05/29/%E6%95%B0%E7%BB%84%E6%8E%92%E5%BA%8F/../../../%E7%AC%94%E8%AE%B0/hexo/source/_posts/%E6%95%B0%E7%BB%84%E6%8E%92%E5%BA%8F/1653812670549.png" alt="1653812670549"></p>
+<p>这是为什么呢？</p>
+<p>通过比较两代码发现，&#x3D;&#x3D;int&#x3D;&#x3D;属于基本数据类型，而String属于引用类型，故而将int转换为Integer</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Integer[] arr = &#123;<span class="number">9</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">2</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">6</span>,<span class="number">1</span>,<span class="number">5</span>&#125;;</span><br><span class="line">  Arrays.sort(arr, <span class="keyword">new</span> <span class="title class_">Comparator</span>&lt;Integer&gt;()&#123;</span><br><span class="line">      <span class="meta">@Override</span></span><br><span class="line">      <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">parse</span><span class="params">(<span class="type">int</span> o1, Integer o2)</span>&#123;</span><br><span class="line">          <span class="keyword">return</span> o2-o1;</span><br><span class="line">      &#125;</span><br><span class="line">  &#125;);</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2022/05/29/%E6%95%B0%E7%BB%84%E6%8E%92%E5%BA%8F/1653814055658.png" alt="1653814055658"></p>
+<p>完美运行~</p>
+</li>
+</ul>
+<h4 id="二维数组排序"><a href="#二维数组排序" class="headerlink" title="二维数组排序"></a>二维数组排序</h4><p>上面进行了一维数组的int类型和String类型的排序，那么对于二维数组呢，这又该怎么办呢？</p>
+<ul>
+<li><p>例如，leetcode第79场双周赛的第二题</p>
+<p>经过处理后的到数组</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">String[][] sendAndWords = &#123;&#123;<span class="string">&quot;Alice&quot;</span>,<span class="string">&quot;5&quot;</span>&#125;,</span><br><span class="line">                           &#123;<span class="string">&quot;UserTwo&quot;</span>,<span class="string">&quot;2&quot;</span>&#125;,</span><br><span class="line">                           &#123;<span class="string">&quot;userThree&quot;</span>,<span class="string">&quot;3&quot;</span>&#125;&#125;;</span><br><span class="line"><span class="comment">//其中sendAndWords第一列表示的是用户，第二列表示发送的单词数。</span></span><br><span class="line"><span class="comment">/**需求为</span></span><br><span class="line"><span class="comment">  1、输出单词数最多的用户。</span></span><br><span class="line"><span class="comment">  2、若单词数相同，则按名字字典序最大的输出。</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+<p>那么我们对这个二维数组的操作为先对第二列降序，在第二列相同的情况下对第一列降序。</p>
+<p>利用上面一维数组的思想</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">String[][] sendAndWords = &#123;&#123;<span class="string">&quot;Alice&quot;</span>,<span class="string">&quot;5&quot;</span>&#125;,</span><br><span class="line">                           &#123;<span class="string">&quot;UserTwo&quot;</span>,<span class="string">&quot;2&quot;</span>&#125;,</span><br><span class="line">                           &#123;<span class="string">&quot;userThree&quot;</span>,<span class="string">&quot;3&quot;</span>&#125;&#125;;</span><br><span class="line">Arrays.sort(sendAndWords, <span class="keyword">new</span> <span class="title class_">Comparator</span>&lt;String[]&gt;() &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">compare</span><span class="params">(String[] o1, String[] o2)</span> &#123;</span><br><span class="line">        <span class="comment">// 若单词数相同，那么按照用户名字典序降序</span></span><br><span class="line">        <span class="keyword">if</span> (o2[<span class="number">1</span>].equals(o1[<span class="number">1</span>])) &#123;</span><br><span class="line">            <span class="keyword">return</span> o2[<span class="number">0</span>].compareTo(o1[<span class="number">0</span>]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 按单词数降序。</span></span><br><span class="line">        <span class="keyword">return</span> o2[<span class="number">1</span>].compareTo(o1[<span class="number">1</span>]);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>完美运行~</p>
+<p><img src="/2022/05/29/%E6%95%B0%E7%BB%84%E6%8E%92%E5%BA%8F/1653816639187.png" alt="1653816639187"></p>
+</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -179,73 +241,119 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2022/05/29/%E6%95%B0%E7%BB%84%E6%8E%92%E5%BA%8F/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/05/27/%E9%83%A8%E7%BD%B2hexo/" class="archive-article-date">
-  	<time datetime="2022-05-27T15:48:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-05-27</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2022/05/27/%E9%83%A8%E7%BD%B2hexo/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">部署hexo</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/05/27/%E9%83%A8%E7%BD%B2hexo/">部署hexo</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E7%BB%84%E6%8E%92%E5%BA%8F"><span class="toc-number">1.</span> <span class="toc-text">数组排序</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84%E6%8E%92%E5%BA%8F"><span class="toc-number">1.1.</span> <span class="toc-text">一维数组排序</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8E%92%E5%BA%8F"><span class="toc-number">1.2.</span> <span class="toc-text">自定义排序</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E6%8E%92%E5%BA%8F"><span class="toc-number">1.3.</span> <span class="toc-text">二维数组排序</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/05/26/hello-world/" class="archive-article-date">
-  	<time datetime="2022-05-26T14:45:46.986Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-05-26</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/05/26/hello-world/">Hello World</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -268,8 +376,8 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: true,
