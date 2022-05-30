@@ -7,8 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
-  <link rel="icon" href="/img/fluid.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/myHead.png">
+  <link rel="icon" href="/assets/myHead.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
@@ -55,6 +55,8 @@
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
 
+  <link  rel="stylesheet" href="https://lib.baomitu.com/prism/1.26.0/plugins/line-numbers/prism-line-numbers.min.css" />
+
   <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
 
 
@@ -83,7 +85,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.0","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.0","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":true,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":false,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -202,7 +204,7 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+     style="background: url('/assets/320986.jpg') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -286,68 +288,72 @@
               
               <h4 id="部署hexo"><a href="#部署hexo" class="headerlink" title="部署hexo"></a>部署hexo</h4><h5 id="环境配置：git，nodejs"><a href="#环境配置：git，nodejs" class="headerlink" title="环境配置：git，nodejs"></a>环境配置：git，nodejs</h5><h6 id="git（Windows版本）"><a href="#git（Windows版本）" class="headerlink" title="git（Windows版本）"></a>git（Windows版本）</h6><ol>
 <li><p>登录&#x3D;&#x3D;git&#x3D;&#x3D;官网 <a target="_blank" rel="noopener" href="https://git-scm.com/">https://git-scm.com/</a> 点击&#x3D;&#x3D;downloads&#x3D;&#x3D;下载</p>
-<p><img src="/2022/05/27/%E9%83%A8%E7%BD%B2hexo/gitOfficialWebsite.png" srcset="/img/loading.gif" lazyload alt="1653655831928"></p>
+<p><img src="/2022/05/27/%E9%83%A8%E7%BD%B2hexo/gitOfficialWebsite.png" alt="1653655831928"></p>
 <span id="more"></span>
 </li>
 <li><p>点击&#x3D;&#x3D;Windows&#x3D;&#x3D;</p>
-<p><img src="/2022/05/27/%E9%83%A8%E7%BD%B2hexo/gitPlayStation.png" srcset="/img/loading.gif" lazyload alt="1653655951795"></p>
+<p><img src="/2022/05/27/%E9%83%A8%E7%BD%B2hexo/gitPlayStation.png" alt="1653655951795"></p>
 </li>
 <li><p>按电脑位数选择版本</p>
-<p><img src="/2022/05/27/%E9%83%A8%E7%BD%B2hexo/gitDownloadVersion.png" srcset="/img/loading.gif" lazyload alt="1653655976607"></p>
+<p><img src="/2022/05/27/%E9%83%A8%E7%BD%B2hexo/gitDownloadVersion.png" alt="1653655976607"></p>
 </li>
 <li><p>打开cmd（管理员身份运行）命令行</p>
-<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs cmd">#查看安装版本，以此校验git安装是否成功<br>git --version<br></code></pre></td></tr></table></figure>
+<div class="code-wrapper"><pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">#查看安装版本，以此校验git安装是否成功
+git --version<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></div>
 
-<p><img src="/2022/05/27/%E9%83%A8%E7%BD%B2hexo/gitVersion.png" srcset="/img/loading.gif" lazyload alt="1653661006444"></p>
+<p><img src="/2022/05/27/%E9%83%A8%E7%BD%B2hexo/gitVersion.png" alt="1653661006444"></p>
 </li>
 </ol>
 <h6 id="nodejs（Windows版本）"><a href="#nodejs（Windows版本）" class="headerlink" title="nodejs（Windows版本）"></a>nodejs（Windows版本）</h6><ol>
 <li><p>前往官网下载&#x3D;&#x3D;nodejs&#x3D;&#x3D; <a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/download/">https://nodejs.org/zh-cn/download/</a></p>
-<p><img src="/2022/05/27/%E9%83%A8%E7%BD%B2hexo/nodejsDownloadPage.png" srcset="/img/loading.gif" lazyload alt="1653662276898"></p>
+<p><img src="/2022/05/27/%E9%83%A8%E7%BD%B2hexo/nodejsDownloadPage.png" alt="1653662276898"></p>
 </li>
 <li><p>下载完成后点击安装</p>
 <p>安装nodejs，直接点下一步，直至安装完成。</p>
 </li>
 <li><p>检验安装是否成功</p>
-<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs cmd">#查看nodejs版本，检验安装是否成功<br>node -v<br></code></pre></td></tr></table></figure>
+<div class="code-wrapper"><pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">#查看nodejs版本，检验安装是否成功
+node -v<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></div>
 
-<p><img src="/2022/05/27/%E9%83%A8%E7%BD%B2hexo/nodejsVersion.png" srcset="/img/loading.gif" lazyload alt="1653662680884"></p>
+<p><img src="/2022/05/27/%E9%83%A8%E7%BD%B2hexo/nodejsVersion.png" alt="1653662680884"></p>
 </li>
 </ol>
 <h5 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h5><p>所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo。</p>
-<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmd">npm install -g hexo-cli<br></code></pre></td></tr></table></figure>
+<div class="code-wrapper"><pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">npm install -g hexo-cli<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
 
 <h5 id="建站"><a href="#建站" class="headerlink" title="建站"></a>建站</h5><p>安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。</p>
-<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs cmd">hexo init &lt;folder&gt; #将hexo初始化在folder文件夹中<br><span class="hljs-built_in">cd</span> &lt;folder&gt;<br>npm install<br></code></pre></td></tr></table></figure>
+<div class="code-wrapper"><pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">hexo init &lt;folder&gt; #将hexo初始化在folder文件夹中
+cd &lt;folder&gt;
+npm install<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></div>
 
 <h5 id="测试运行"><a href="#测试运行" class="headerlink" title="测试运行"></a>测试运行</h5><p>在cmd中运行</p>
-<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmd">hexo s #一定要在hexo的根目录中，及folder文件夹中<br></code></pre></td></tr></table></figure>
+<div class="code-wrapper"><pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">hexo s #一定要在hexo的根目录中，及folder文件夹中<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
 
-<p><img src="/2022/05/27/%E9%83%A8%E7%BD%B2hexo/hexoTest.png" srcset="/img/loading.gif" lazyload alt="1653663635399"></p>
-<p><img src="/2022/05/27/%E9%83%A8%E7%BD%B2hexo/testResult.png" srcset="/img/loading.gif" lazyload alt="1653663719815"></p>
+<p><img src="/2022/05/27/%E9%83%A8%E7%BD%B2hexo/hexoTest.png" alt="1653663635399"></p>
+<p><img src="/2022/05/27/%E9%83%A8%E7%BD%B2hexo/testResult.png" alt="1653663719815"></p>
 <h4 id="主题更换（yilia）"><a href="#主题更换（yilia）" class="headerlink" title="主题更换（yilia）"></a>主题更换（yilia）</h4><ol>
 <li><p>根目录下打开&#x3D;&#x3D;git bash&#x3D;&#x3D;</p>
 </li>
 <li><p>输入</p>
-<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmd">git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia<br></code></pre></td></tr></table></figure>
+<div class="code-wrapper"><pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">git clone https:&#x2F;&#x2F;github.com&#x2F;litten&#x2F;hexo-theme-yilia.git themes&#x2F;yilia<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
 </li>
 <li><p>修改根目录下的&#x3D;&#x3D;_config.yml&#x3D;&#x3D;配置</p>
 <p>将&#x3D;&#x3D;theme&#x3D;&#x3D;的值修改为&#x3D;&#x3D;yilia&#x3D;&#x3D;</p>
 </li>
 <li><p>三连（hexo clean,g,d）查看效果</p>
-<p><img src="/2022/05/27/%E9%83%A8%E7%BD%B2hexo/1653722155749.png" srcset="/img/loading.gif" lazyload alt="1653722155749"></p>
+<p><img src="/2022/05/27/%E9%83%A8%E7%BD%B2hexo/1653722155749.png" alt="1653722155749"></p>
 </li>
 <li><p>头像设置</p>
 <p>打开&#x3D;&#x3D;yilia&#x3D;&#x3D;下的&#x3D;&#x3D;_config.yml&#x3D;&#x3D;，修改&#x3D;&#x3D;avatar&#x3D;&#x3D;(头像)和&#x3D;&#x3D;favicon&#x3D;&#x3D;(选项卡图标)</p>
-<p><img src="/2022/05/27/%E9%83%A8%E7%BD%B2hexo/1653724499349.png" srcset="/img/loading.gif" lazyload alt="1653724499349"></p>
+<p><img src="/2022/05/27/%E9%83%A8%E7%BD%B2hexo/1653724499349.png" alt="1653724499349"></p>
 <p>此时的路径为相对路径，绝对路径为hexo根目录下的source中。故在source文件夹中放入文件</p>
-<p><img src="/2022/05/27/%E9%83%A8%E7%BD%B2hexo/1653724632555.png" srcset="/img/loading.gif" lazyload alt="1653724632555"></p>
+<p><img src="/2022/05/27/%E9%83%A8%E7%BD%B2hexo/1653724632555.png" alt="1653724632555"></p>
 <p>三连查看效果</p>
 </li>
 </ol>
 <h4 id="部署遇到的问题"><a href="#部署遇到的问题" class="headerlink" title="部署遇到的问题"></a>部署遇到的问题</h4><h5 id="hexo-d失败"><a href="#hexo-d失败" class="headerlink" title="hexo d失败"></a>hexo d失败</h5><ul>
 <li><p>swapd文件错误</p>
-<p><img src="/2022/05/27/%E9%83%A8%E7%BD%B2hexo/1653721963180.png" srcset="/img/loading.gif" lazyload alt="1653721963180"></p>
+<p><img src="/2022/05/27/%E9%83%A8%E7%BD%B2hexo/1653721963180.png" alt="1653721963180"></p>
 <p>解决办法：</p>
 <ol>
 <li><p>进入hexo的根目录</p>
@@ -357,11 +363,13 @@
 <li><p>在根目录右键打开&#x3D;&#x3D;git bash&#x3D;&#x3D;</p>
 </li>
 <li><p>重新部署</p>
-<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs cmd">hexo clean<br>hexo g<br>hexo d<br></code></pre></td></tr></table></figure></li>
+<div class="code-wrapper"><pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">hexo clean
+hexo g
+hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></div></li>
 </ol>
 </li>
 <li><p>网络不稳定</p>
-<p><img src="/2022/05/27/%E9%83%A8%E7%BD%B2hexo/1653722998916.png" srcset="/img/loading.gif" lazyload alt="1653722998916"></p>
+<p><img src="/2022/05/27/%E9%83%A8%E7%BD%B2hexo/1653722998916.png" alt="1653722998916"></p>
 <p>多尝试几次即可。</p>
 </li>
 </ul>
@@ -372,7 +380,7 @@
 <p>（此后，通过&#x3D;&#x3D;hexo new&#x3D;&#x3D;一个新的文件时，会在文件的同级目录下生成一个同名的文件夹，hexo生成页面时，将其一起打包进一个文件夹中。故接下来要修改md的图片位置）</p>
 </li>
 <li><p>打开Typora，点击&#x3D;&#x3D;文件&#x3D;&#x3D;-&gt;&#x3D;&#x3D;偏好设置&#x3D;&#x3D;-&gt;&#x3D;&#x3D;图片插入&#x3D;&#x3D;，修改为下图所示。</p>
-<p><img src="/2022/05/27/%E9%83%A8%E7%BD%B2hexo/1653720865785.png" srcset="/img/loading.gif" lazyload alt="1653720865785"></p>
+<p><img src="/2022/05/27/%E9%83%A8%E7%BD%B2hexo/1653720865785.png" alt="1653720865785"></p>
 </li>
 <li><p>此时再次三连(hexo clean, hexo g, hexo d)即可。</p>
 </li>
@@ -596,10 +604,6 @@
 
 
 
-  
-    <script  src="/js/img-lazyload.js" ></script>
-  
-
 
 
 
@@ -630,6 +634,8 @@
   });
 </script>
 
+
+  <script  src="https://lib.baomitu.com/prism/1.26.0/plugins/line-numbers/prism-line-numbers.min.js" ></script>
 
   <script>
   (function() {
